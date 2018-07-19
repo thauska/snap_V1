@@ -218,15 +218,16 @@ class course_renderer extends \core_course_renderer {
         // Display the link to the module (or do nothing if module has no url).
         $cmname = $this->course_section_cm_name($mod, $displayoptions);
         $assetlink = '';
-
+///////////////////////////////////////////////////////////////////////////////////
+        // codigo modificado, ocultada a exibição de tipo de dados.
         if (!empty($cmname)) {
             // Activity/resource type.
             $snapmodtype = $this->get_mod_type($mod)[0];
             $assetlink = '<div class="snap-assettype">'.$snapmodtype.'</div>';
-            // Asset link.
+           // Asset link.
             $assetlink .= '<h4 class="snap-asset-link">'.$cmname.'</h4>';
         }
-
+////////////////////////////////////////////////////////////////////////////////////
         // Asset content.
         $contentpart = $this->course_section_cm_text($mod, $displayoptions);
 
@@ -1142,7 +1143,7 @@ class course_renderer extends \core_course_renderer {
             if (empty($courseteachers)) {
                 $courseteachers = "<h5>".get_string('coursecontacts', 'theme_snap')."</h5>";
             }
-            $courseteachers .= '<br><a class="btn btn-default btn-sm" href="'.$CFG->wwwroot.'/enrol/users.php?id='.
+            $courseteachers .= '<br><a class="btn btn-default btn-sm" href="'.$CFG->wwwroot.'/user/index.php?id='.
                 $COURSE->id.'">'.get_string('enrolledusers', 'enrol').'</a>';
         }
 

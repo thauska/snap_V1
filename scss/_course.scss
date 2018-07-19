@@ -335,6 +335,10 @@ li.section:focus {
         background-image: url([[pix:core|i/marked]]);
     }
 
+    .snap-sharing-cart:after {
+        background-image: url([[pix:core|t/backup]]);
+    }
+
     a.ajaxing:after {
         @include ajaxing(block, relative, 20px, 6px);
         background-image: none !important;
@@ -582,6 +586,7 @@ body.format-flexpage .singlebutton {
     height: auto;
     font-family: $font-family-system;
     background-color: #fff;
+    
     border: 1px solid $gray-lighter;
     border-top-width: 0.3em;
 
@@ -822,7 +827,7 @@ body.snap-resource-card li.snap-resource {
     margin: 1%;
     float: left;
     clear: none;
-    background-image: url([[pix:theme|file]]);
+   /* background-image: url([[pix:theme|file]]);*/
     background-repeat: no-repeat;
     background-position: 50% 70%;
     background-size: 38px auto;

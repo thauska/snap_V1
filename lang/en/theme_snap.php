@@ -52,6 +52,11 @@ $string['cachedef_course_completion_progress_ts'] = 'This is used so that we can
 $string['cachedef_webservicedefinitions'] = 'Caching for auto generated web service definitions.';
 $string['card'] = 'Card';
 $string['categoryedit'] = 'Edit category';
+$string['category_color'] = 'Category color';
+$string['category_color_description'] = 'Course Category color. Child courses take the nearest parent category configuration';
+$string['category_color_palette'] = 'Color palette';
+$string['category_color_palette_description'] = 'See the corresponding hexadecimal value for the given color. This wont
+affect any configuration, it is just a sample to help users build the configuration value.';
 $string['changecoverimage'] = 'Change cover image';
 $string['changefullname'] = 'Change site name';
 $string['chapters'] = 'Chapters';
@@ -99,7 +104,7 @@ $string['deletingassetname'] = 'Deleting {$a->type} "{$a->name}"';
 $string['deletesectionconfirm'] = 'Delete Section';
 $string['deletingsection'] = 'Deleting section "{$a}"';
 $string['draft'] = 'Not published to students';
-$string['dropzonelabel'] = 'Drop files to attach, or <span class="btn-link">browse</span>';
+$string['dropzonelabel'] = 'Drop files to attach, or <span class="fake-link">browse</span>';
 $string['due'] = 'Due {$a}';
 $string['edit'] = 'Edit "{$a}"';
 $string['editcoursecontent'] = 'Edit blocks';
@@ -107,8 +112,12 @@ $string['editcoursesettings'] = 'Course settings';
 $string['editcoursetopic'] = 'Edit section';
 $string['editcustomfooter'] = 'Edit footer';
 $string['editcustommenu'] = 'Edit custom menu';
+$string['error:categorycolorinvalidjson'] = 'Incorrect JSON format for course categories';
+$string['error:categorycolorinvalidvalue'] = 'Record id or color value for category "{$a}" aren\'t valid';
+$string['error:categorynotfound'] = 'The category record with id "{$a}" hasn\'t been found';
 $string['error:coverimageexceedsmaxbytes'] = 'Cover image exceeds the site level maximum allowed file size ({$a})';
 $string['error:coverimageresolutionlow'] = 'For best quality, we recommend a larger image of at least 1024px width.';
+$string['error:duplicatedcategoryids'] = 'Incorrect JSON format, some IDs are duplicated';
 $string['error:failedtochangeassetvisibility'] = 'Failed to hide/show asset';
 $string['error:failedtochangesectionvisibility'] = 'Failed to hide/show section';
 $string['error:failedtohighlightsection'] = 'Failed to highlight section';
@@ -173,8 +182,6 @@ $string['headingfont'] = 'Heading font';
 $string['headingfont_desc'] = 'This font is used in the headings (h1 - h6 elements) across your site. If you are including a custom webfont remember to add it to the moodle extra html form.';
 $string['helpwithlogin'] = 'Help with login';
 $string['helpwithloginandguest'] = 'Help with login / guest access';
-$string['hidenavblock'] = 'Hide default Moodle navigation block';
-$string['hidenavblockdesc'] = "In Snap we recommend hiding the default Moodle navigation block. ";
 $string['hiddencoursestoggle'] = 'Hidden courses';
 $string['highlightedsection'] = 'highlighted';
 $string['home'] = 'home';
@@ -183,6 +190,16 @@ $string['images'] = 'Images';
 $string['instagram'] = 'Instagram';
 $string['instagramdesc'] = 'The url of your instagram account.';
 $string['introduction'] = 'Introduction';
+$string['jsontext'] = 'JSON Text';
+$string['jsontextdescription'] = 'The text area validates the given JSON, so only existing categories are allowed,
+only numerical values as id records (category records) are valid and only hexadecimal values are accepted as colors.
+Here is an example:<br>
+{"1":"#FAAFFF",<br>
+"45":"#AFF",<br>
+"65":"#FFF228",<br>
+"12":"#CC0084",<br>
+"56":"#CC0087",<br>
+"89":"#CCF084"}';
 $string['knowledgebase'] = 'Moodlerooms Knowledge Base';
 $string['list'] = 'List';
 $string['linkedin'] = 'LinkedIn';
@@ -240,6 +257,10 @@ $string['poweredbyrunby'] = 'Built with <a href="http://moodlerooms.com/" target
      powered by <a href="http://www.moodle.com/" target="_blank">Moodle</a>.<br>
     Copyright &#169; 2017 Blackboard Inc, All Rights Reserved.';
 $string['previoussection'] = 'Previous section';
+$string['privacy:metadata:theme_snap_course_favorites:courseid'] = 'The course ID of the course that the user favorited';
+$string['privacy:metadata:theme_snap_course_favorites:userid'] = 'The user ID of the user that favorited the course';
+$string['privacy:metadata:theme_snap_course_favorites:timefavorited'] = 'The timestamp of when the user favorited the course';
+$string['privacy:metadata:theme_snap_course_favorites'] = 'Stores users\' course favorites for Snap';
 $string['problemsfound'] = 'Problems Found';
 $string['progress'] = 'Progress';
 $string['readmore'] = 'Read more&nbsp;»';
@@ -254,6 +275,7 @@ $string['released'] = 'Released: {$a}';
 $string['reopened'] = 'Reopened';
 $string['resourcedisplay'] = 'Resource display';
 $string['resourcedisplayhelp'] = 'Select how attachments and links appear in your course.';
+$string['search'] = 'Search contents';
 $string['seriffont'] = 'Serif font';
 $string['seriffont_desc'] = 'This font is used for most user generated content. Using a serif font makes user generated content more readable, and feel like it is written by a human.';
 $string['showcoursegradepersonalmenu'] = 'Grades';
@@ -263,8 +285,8 @@ $string['submitted'] = 'Submitted';
 $string['sitedescription'] = 'Site description';
 $string['subtitle'] = 'Subtitle';
 $string['subtitle_desc'] = 'Briefly describe your site for users.';
-$string['themecolor'] = 'Site colour';
-$string['themecolordesc'] = 'Bright colours work best and will give your site a modern feel.';
+$string['themecolor'] = 'Site color';
+$string['themecolordesc'] = 'Bright colors work best and will give your site a modern feel.';
 $string['title'] = 'Title';
 $string['top'] = 'Top';
 $string['topbarbgcolor'] = 'Navigation bar color';
@@ -294,3 +316,5 @@ $string['xofysubmitted'] = '{$a->completed} of {$a->participants} Submitted';
 $string['xungraded'] = '{$a} Ungraded';
 $string['youtube'] = 'YouTube';
 $string['youtubedesc'] = 'The url of your youtube channel.';
+$string['showallsectionsdisabled'] = 'Due to its design language, "Show all sections on one page" isn\'t available in Snap.';
+$string['disabled'] = 'Disabled';

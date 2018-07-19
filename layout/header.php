@@ -13,12 +13,13 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
+ 
 /**
  * Layout - header.
  * This layout is baed on a moodle site index.php file but has been adapted to show news items in a different
  * way.
- *
+ *<li><a title="Resetar" href="http://200.239.90.67/blocks/accessibility/database.php?redirect=<?=htmlentities("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);?>&op=reset&scheme=1&userid=20773">R</a></li>
+
  * @package   theme_snap
  * @copyright Copyright (c) 2015 Moodlerooms Inc. (http://www.moodlerooms.com)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -28,11 +29,11 @@ defined('MOODLE_INTERNAL') || die();
 $PAGE->set_popup_notification_allowed(false);
 
 // Require standard page js.
-\theme_snap\output\shared::page_requires_js();
+ \theme_snap\output\shared::page_requires_js();
 
 echo $OUTPUT->doctype();
 ?>
-
+       
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
     <?php
@@ -72,6 +73,33 @@ if (!empty($coverimagecss) && !$carousel) {
 }
 ?>
 
+<style>
+
+
+
+.list_acc {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.list_acc li {
+    float: left;
+}
+
+.list_acc li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.list_acc li a:hover {
+    background-color: #7F7F7F;
+}
+</style>
+
 </head>
 
 <style> /*criado*/
@@ -86,7 +114,6 @@ if (!empty($coverimagecss) && !$carousel) {
 
 #mr-nav{
     position: absolute;
-    /*background-color: rgba(255,255,255,.9);*/
 }
 .block_settings .block_tree .tree_item.branch{
     padding-top: 25px;
@@ -94,11 +121,35 @@ if (!empty($coverimagecss) && !$carousel) {
 
 .mast-image #page-mast>h1, .mast-image #page-mast>h1 a, .mast-image #page-mast>h1 a:hover{
     text-align: left;
-}*/
+}
+
+.fundo{
+background-color:#fff;
+}
+
+.fundoR{
+background-color:#99CCFF;
+}
+
+
+.fundo1{
+background-color:#FFFFCC;
+}
+
+.fundo2{
+background-color:#99CCFF;
+}
+
+.fundo3{
+background-color:#000;
+}
 
 </style>
 
-<body <?php echo $OUTPUT->body_attributes(); ?>>
+
+
+
+<body  <?php echo $OUTPUT->body_attributes(); ?> >
 
 <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
 <ul id="menu-barra-temp" style="list-style:none;">
@@ -106,18 +157,125 @@ if (!empty($coverimagecss) && !$carousel) {
 		<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
 	</ul>
 </div>
+<?php echo $this->page->bodyid; ?>
 
-<script> /* Gio's Contribuições */
+<script> 
+
     window.onload = function(){
         var i = document.getElementById("page-content");
         var j = i.getElementsByTagName("div")[0];
         if(j.getAttribute("id")=="barra-brasil"){
             j.style.display="none";
-        }
-        
+        }       
     }
+
+
+    function trocarLR(){
+    	var obj=document.getElementById('page-site-index');
+    	if(obj.className==''){
+    		obj.className='format-site course path-site safari dir-ltr lang-pt_br yui-skin-sam yui3-skin-sam 200-239-90-67 pagelayout-frontpage course-1 context-2 notloggedin  device-type-default snap-resource-card theme-snap';
+    	}else{
+    		obj.className='fundoR';
+    	 }
+    	}
+    
+
+    function trocarR(){
+    	var obj=document.getElementById('page-course-view-topics');
+    	if(obj.className==''){
+    		obj.className='format-topics  path-course path-course-view safari dir-ltr lang-pt_br yui-skin-sam yui3-skin-sam 200-239-90-67 pagelayout-course course-2801 context-158833 category-365  device-type-default completion-tracking snap-resource-card theme-snap';
+    	}else{
+    		obj.className='fundoR';
+    	 }
+    	}
+
+    
+
+    function trocar(){
+    	var obj=document.getElementById('corpo');
+    	if(obj.className==''){
+    		obj.className='fundo';
+    	}else{
+    		obj.className='fundo1';
+    	 }
+    	}
+    function trocar2(){
+    	var obj=document.getElementById('corpo');
+    	if(obj.className==''){
+    		obj.className='fundo';
+    	}else{
+    		obj.className='fundo2';
+    	 }
+    	}
+	
+    function trocar3(){
+    	var obj=document.getElementById('corpo');
+    	if(obj.className==''){
+    		obj.className='fundo';
+    	}else{
+    		obj.className='fundo3';
+    	 }
+    	}
+   
 </script>
 
-<?php echo $OUTPUT->standard_top_of_body_html() ?>
+
+<div id="accessibility_controls" class="content">
+	<ul id="block_accessibility_textresize" class="button_row">
+		<li class="access-button"><a title="Diminuir o tamanho do texto"
+			id="block_accessibility_dec"
+			href="http://200.239.90.67/blocks/accessibility/changesize.php?redirect=http%3A%2F%2F200.239.90.67%2Fuser%2Fprofile.php&amp;op=dec">A-</a></li>
+		<li class="access-button"><a id="block_accessibility_reset"
+			title="Redefinir tamanho do texto (limpa definição salva)"
+			href="http://200.239.90.67/blocks/accessibility/changesize.php?redirect=http%3A%2F%2F200.239.90.67%2Fuser%2Fprofile.php&amp;op=reset"
+			class="disabled">A</a></li>
+		<li class="access-button"><a title="Aumentar o tamanho do texto"
+			id="block_accessibility_inc"
+			href="http://200.239.90.67/blocks/accessibility/changesize.php?redirect=http%3A%2F%2F200.239.90.67%2Fuser%2Fprofile.php&amp;op=inc">A+</a></li>
+		<li class="access-button"><a title="Salvar definição"
+			id="block_accessibility_save"
+			href="http://200.239.90.67/blocks/accessibility/database.php?redirect=http%3A%2F%2F200.239.90.67%2Fuser%2Fprofile.php&amp;op=save&amp;size=1&amp;scheme=1">&nbsp;</a></li>
+	
+	
+		<li class="access-button"><a
+			title="Default Colour Scheme (Clears Saved Setting)"
+			id="block_accessibility_colour1"
+			href="#" onclick="trocarR();trocarLR();">R</a></li>
+		
+		
+		
+		
+		
+		<li class="access-button"><a title="Lowered Contrast 1"
+			id="block_accessibility_colour2"
+			href="#" onclick="trocar();" >A</a></li>
+		
+		
+		
+		
+		
+		
+		
+		<li class="access-button"><a title="Lowered Contrast 2"
+			id="block_accessibility_colour3"
+			href="#" onclick="trocar2();">A</a></li>
+			
+			
+			
+			
+		<li class="access-button"><a title="Alto Contraste"
+			id="block_accessibility_colour4"
+			href="#" onclick="trocar3();">A</a></li>
+	</ul>
+	<div id="block_accessibility_message" class="clearfix"></div>
+	
+</div>
+<span id="loader-icon"></span>
+
+
+
+     
+
+<?php  echo $OUTPUT->standard_top_of_body_html() ?>
 
 <?php require(__DIR__.'/nav.php');

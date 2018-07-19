@@ -1184,7 +1184,7 @@ HTML;
                 return !$isnavblock;
             });
         }
-
+ 
         $blocks = $this->page->blocks->get_blocks_for_region($region);
 
         $lastblock = null;

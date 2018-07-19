@@ -25,6 +25,7 @@ defined('MOODLE_INTERNAL') || die();
 
 require(__DIR__.'/header.php');
 
+
 use theme_snap\local;
 
 // @codingStandardsIgnoreStart

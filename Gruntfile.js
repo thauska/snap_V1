@@ -35,6 +35,9 @@ module.exports = function(grunt) {
     // We need to include the core Moodle grunt file too, otherwise we can't run tasks like "amd".
     require("grunt-load-gruntfile")(grunt);
     grunt.loadGruntfile("../../Gruntfile.js");
+    grunt.loadNpmTasks("grunt-contrib-less");
+    grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks("grunt-contrib-clean");
 
     // PHP strings for exec task.
     var moodleroot = 'dirname(dirname(__DIR__))',
@@ -63,7 +66,7 @@ module.exports = function(grunt) {
         http: {
             prime_theme_cache: {
                 options: {
-                    url: 'http://joule2.dev/theme/styles.php/snap/-1/all',
+                    url: 'http://200.239.90.67/theme/styles.php/snap/-1/all',
                 }
             }
         },

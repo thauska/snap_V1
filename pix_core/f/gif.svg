@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 100 100"><path d="M96.2 79.1c0 3.3-2.5 5.9-5.6 5.9h-82C5.5 85 3 82.3 3 79.1V20.9C3 17.7 5.5 15 8.6 15h82.1c3.1 0 5.6 2.6 5.6 5.9l-.1 58.2z" fill="none" stroke="#999" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke-miterlimit="10"/><g fill="#999"><path d="M67.7 34.6l10.8 18.8 10.9 18.8H46l10.9-18.8 10.8-18.8z"/><path d="m32.8 44.4l8 13.9 8 13.9h-32l8-13.9 8-13.9"/><circle cx="18.3" cy="33.5" r="7.7"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-467 269 24 24" style="enable-background:new -467 269 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F9F9F9;}
+	.st1{fill:#F16690;}
+	.st2{fill:none;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'OpenSans';}
+	.st5{font-size:3.5815px;}
+</style>
+<g>
+	<rect x="-463.9" y="275.5" class="st0" width="19.2" height="17.4"/>
+	<polygon class="st1" points="-444.4,276.5 -444.4,275.4 -450.8,275.4 -450.8,269.1 -463.9,269.1 -463.9,276.5 	"/>
+	<polygon class="st1" points="-450.3,269.1 -450.3,274.9 -444.4,274.9 	"/>
+	<path class="st1" d="M-451.5,290.8l-1.6-1.8h0.8l-1.4-1.8h0.9l-1.2-1.4h0.7l-0.9-1.1l-0.8,1.1h0.7l-1.1,1.4h0.9l-1.3,1.8h0.8
+		l-1.4,1.8h2.4v2.2h0.4v-2.2H-451.5z"/>
+	<rect id="XMLID_16_" x="-462.6" y="270.8" class="st2" width="9.1" height="4"/>
+	<text id="XMLID_2_" transform="matrix(1.0016 0 0 1 -462.5098 273.4599)" class="st3 st4 st5">BMP</text>
+</g>
+</svg>

@@ -1,3 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 100 100"><g fill="none" stroke="#999" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke-miterlimit="10"><path d="M65.2 27.4H85l-25-24v18.8c0 2.9 2.3 5.2 5.2 5.2z"/><path d="M65.2 27.4c-2.9 0-5.2-2.3-5.2-5.2V3.4H20.2c-2.9 0-5.2 2.3-5.2 5.2v82.8c0 2.9 2.3 5.2 5.2 5.2h59.5c2.9 0 5.2-2.3 5.2-5.2v-64H65.2z"/></g><text transform="translate(22.804 69.7)" fill="#999" font-family="&apos;VarelaRound-Regular&apos;" font-size="28.746">
-      &lt; /&gt;
-    </text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-467 269 24 24" style="enable-background:new -467 269 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F9F9F9;}
+	.st1{fill:#8252B1;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'OpenSans';}
+	.st4{font-size:3.7282px;}
+</style>
+<g>
+	<rect x="-464.7" y="275.7" class="st0" width="19.2" height="17.3"/>
+	<polygon class="st1" points="-445.3,276.4 -445.3,275.3 -451.7,275.3 -451.7,269 -464.7,269 -464.7,276.4 	"/>
+	<polygon class="st1" points="-451.2,269 -451.2,274.9 -445.3,274.9 	"/>
+	<text transform="matrix(1.004 0 0 1 -463.2603 274.1729)" class="st2 st3 st4">HTML</text>
+	<path class="st1" d="M-452.5,283.6l-1-1c-0.1-0.1-0.1-0.1-0.3-0.1s-0.3,0-0.3,0.1c-0.1,0.1-0.1,0.4,0,0.5l0.8,0.8l-0.8,0.8
+		c-0.1,0.1-0.1,0.1-0.1,0.3c0,0.1,0,0.3,0.1,0.3c0.1,0.1,0.1,0.1,0.3,0.1s0.3,0,0.3-0.1l1-1C-452.4,284-452.4,283.8-452.5,283.6
+		L-452.5,283.6z"/>
+	<path class="st1" d="M-456.3,284.9c0-0.1,0-0.3-0.1-0.3l-0.8-0.8l0.8-0.8c0.1-0.1,0.1-0.4,0-0.5c-0.1-0.1-0.1-0.1-0.3-0.1
+		s-0.3,0-0.3,0.1l-1,1c-0.1,0.1-0.1,0.4,0,0.5l1,1c0.1,0.1,0.1,0.1,0.3,0.1s0.3,0,0.3-0.1S-456.3,285-456.3,284.9L-456.3,284.9z"/>
+	<path class="st1" d="M-454.3,281.4h-0.1c-0.1,0-0.3,0.1-0.4,0.3l-1.7,4.5c0,0.1,0,0.3,0,0.3c0,0.1,0.1,0.1,0.3,0.3h0.1
+		c0.1,0,0.3-0.1,0.4-0.3l1.7-4.5C-453.9,281.6-454.1,281.4-454.3,281.4L-454.3,281.4z M-454.5,281.4
+		C-454.3,281.4-454.3,281.4-454.5,281.4"/>
+</g>
+</svg>

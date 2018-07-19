@@ -67,7 +67,8 @@ a,
     &:focus{
         outline: 3px solid $brand-primary;
     }
-    &:active, &:hover {
+    &:active, 
+    &:hover {
         outline: 0;
     }
 }
@@ -76,7 +77,7 @@ a,
 }
 
 a:focus,
-a:hover,{
+a:hover{
     color: darken($brand-primary, 8%);
 }
 #admin-menu-trigger {
@@ -126,16 +127,22 @@ a:hover,{
 .contentwithoutlink,
 .user-grade td.feedbacktext,
 .snap-lightbox-description,
-#page-mod-book-print  {
+#page-mod-book-print{
     font-family: $font-family-serif;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6,
+h1, 
+.h1,
+h2, 
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
 legend,
 .mform legend a,
 .mform legend a:hover,
@@ -181,7 +188,7 @@ legend,
 
 .courseinfo-teachers-more {
     &:hover {
-        border-color: $brand-primary ;
+        border-color: $brand-primary;
     }
 }
 
@@ -265,8 +272,6 @@ input[type="reset"],
     }
 }
 
-
-
 .btn.btn-primary,
 .btn.btn-secondary,
 .btn.btn-success,
@@ -348,7 +353,7 @@ a[href="#sections"] {
 // Catch all for mods we do not have colours for.
 li.snap-resource,
 li.snap-activity {
-    border-top-color: $brand-primary
+    border-top-color: $brand-primary;
 }
 
 // yui-bs overrides
@@ -461,7 +466,7 @@ li.snap-activity {
 }
 
 .progress .bar,
-.progress-bar:not(progress-bar-info):not(.progress-bar-success):not(.progress-bar-warning):not(.progress-bar-danger) {
+.progress-bar:not(.progress-bar-info):not(.progress-bar-success):not(.progress-bar-warning):not(.progress-bar-danger) {
     background-color: $brand-primary;
 }
 
